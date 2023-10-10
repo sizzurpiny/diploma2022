@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDBE3322-CD3C-4E1E-BAD4-DFAD14454C34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kyrs2022</RootNamespace>
+    <AssemblyName>kyrs2022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.42.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.42\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateBase.cs" />
+    <Compile Include="DocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForm.Designer.cs">
+      <DependentUpon>DocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ed\Animation.cs" />
+    <Compile Include="Ed\Animator.cs" />
+    <Compile Include="Ed\EgoldsCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ed\FlatColors.cs" />
+    <Compile Include="Itog.cs" />
+    <Compile Include="ItogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItogForm.Designer.cs">
+      <DependentUpon>ItogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LC.Designer.cs">
+      <DependentUpon>LC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInfo.Designer.cs">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polzovatels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polzovatels.Designer.cs">
+      <DependentUpon>Polzovatels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec.Designer.cs">
+      <DependentUpon>Rec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registr.Designer.cs">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testData.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForm.resx">
+      <DependentUpon>DocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email.resx">
+      <DependentUpon>email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItogForm.resx">
+      <DependentUpon>ItogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LC.resx">
+      <DependentUpon>LC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInfo.resx">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polzovatels.resx">
+      <DependentUpon>Polzovatels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rec.resx">
+      <DependentUpon>Rec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registr.resx">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="docs\documentas.docx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\png-transparent-email-united-states-logo-business-organization-email-miscellaneous-angle-rectangle.png" />
+    <None Include="Resources\eye_hide_icon_132911.png" />
+    <None Include="Resources\book_notebook_icon_179130.png" />
+    <None Include="Resources\message_send_paper_plane_icon_179067.png" />
+    <None Include="Resources\download_arrow_down_icon_179148.png" />
+    <None Include="Resources\search_find_magnifyng_glass_person_people_user_icon_179088.png" />
+    <None Include="Resources\like_hand_ok_thumbs_up_icon_179144.png" />
+    <None Include="Resources\maps_arrow_cursor_location_icon_179124.png" />
+    <None Include="Resources\paper_write_folio_icon_179376.png" />
+    <None Include="Resources\paper_folio_page_icon_179379.png" />
+    <None Include="Resources\documents_files_copy_paste_icon_132933.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\hidden_eye_hide_icon_132911.png" />
+    <None Include="Resources\envelope_mail_icon_132943.png" />
+    <None Include="Resources\90-904937_close-icon-png-stencil-clipart.png" />
+    <None Include="Resources\Bryzgi8.png" />
+    <None Include="Resources\Логотип.png" />
+    <None Include="Resources\img_378119.png" />
+    <None Include="Resources\png-transparent-email-united-states-logo-business-organization-email-miscellaneous-angle-rectangle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
